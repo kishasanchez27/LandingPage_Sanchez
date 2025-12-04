@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #3e513c 0%, #2a3f35 100%);
+    color: #f4f1ea;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/earlyteachings-2.jpg");
+    background-position: center 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px solid #d4af37;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5em;
+    color: #f4f1ea;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #e8dcc4;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #8b4513;
+    color: #f4f1ea;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #a0522d;
+    transform: translateY(-2px);
+}
+
+/* Why Section */
+.why-section {
+    background: #3e513c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.paper-card {
+    background: 
+        linear-gradient(rgba(231, 214, 181, 0.95), rgba(225, 208, 173, 0.95)),
+        url('images/paper2.png') center/300px;
+    
+    border: none;
+    border-radius: 15px;
+    padding: 50px 40px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.25),
+        inset 0 0 0 1px rgba(212, 175, 55, 0.3);
+    
+    position: relative;
+    overflow: hidden;
+    color: #3a3332;
+    
+    /* Decorative corner accents */
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238b7355" d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>') center/contain no-repeat;
+        opacity: 0.2;
+    }
+    
+    &::before {
+        top: 15px;
+        left: 15px;
+    }
+    
+    &::after {
+        bottom: 15px;
+        right: 15px;
+        transform: rotate(180deg);
+    }
+}
+
+.paper-card h2 {
+    font-size: 2.2em;
+    color: #3d5a4c;
+    margin-bottom: 25px;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.paper-card p {
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+/* SIMPLE BROWN BOX SECTION */
+.simple-solution-box {
+    background: #8b4513;
+    color: #f4f1ea;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.simple-solution-box h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Single Feature Image Section */
+.single-feature-showcase {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #3e513c, #2a3f35);
+    text-align: center;
+}
+
+.feature-image-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.centered-feature-image {
+    width: 85%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ancient Section - Image LEFT, Box RIGHT */
+.ancient-section {
+    padding: 60px 20px;
+    background: #3e513c;
+}
+
+.ancient-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.ancient-image {
+    width: 400px;
+    height: 370px;
+    order: 1;
+}
+
+.ancient-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ancient-box {
+    background: transparent;
+    border: 2px solid #d4af37;
+    padding: 30px 20px;
+    width: 400px;
+    height: 370px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    order: 2;
+}
+
+.ancient-box h2 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #f4f1ea;
+    position: relative;
+    z-index: 1;
+}
+
+/* Modern Tech Section - Box LEFT, Picture RIGHT */
+.modern-tech-section {
+    padding: 60px 20px;
+    background: #3e513c;
+}
+
+.modern-tech-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.modern-box {
+    background: transparent;
+    border: 2px solid #d4af37;
+    padding: 30px 20px;
+    width: 400px;
+    height: 370px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modern-box h2 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #f4f1ea;
+}
+
+.modern-image {
+    width: 400px;
+    height: 370px;
+}
+
+.modern-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Play Section - Picture LEFT, Box RIGHT */
+.play-section {
+    padding: 60px 20px;
+    background: #3e513c;
+}
+
+.play-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.play-image {
+    width: 400px;
+    height: 370px;
+}
+
+.play-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-box {
+    background: transparent;
+    border: 2px solid #d4af37;
+    padding: 30px 20px;
+    width: 400px;
+    height: 370px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-box h2 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #f4f1ea;
+}
+
+/* Challenge Section - Picture LEFT, Text RIGHT */
+.challenge-section {
+    padding: 60px 20px;
+    background: #c9b896;
+    color: #2a3f35;
+}
+
+.challenge-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.challenge-image {
+    width: 400px;
+    height: 370px;
+}
+
+.challenge-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.challenge-content {
+    width: 400px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.challenge-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.challenge-content h3 {
+    font-size: 1.5em;
+    margin: 20px 0 15px 0;
+    color: #8b4513;
+}
+
+.challenge-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.challenge-content li {
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.challenge-content li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.8em;
+    color: #8b4513;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.benefits-title {
+    background: #c9b896;
+    color: #2a3f35;
+    padding: 20px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    background: rgba(244, 241, 234, 0.1);
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+}
+
+.benefit-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+/* Footer CTA */
+.footer-cta {
+    background: #3e513c;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.footer-cta p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #e8dcc4;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #8b4513;
+    color: #f4f1ea;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #f4f1ea;
+}
+
+/* Simple Footer */
+.simple-footer {
+    background: #2a3f35;
+    color: #f4f1ea;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+.footer-tagline {
+    font-style: italic;
+    color: #e8dcc4;
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+.footer-contact h4,
+.footer-credit h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.footer-contact p,
+.footer-credit p {
+    margin: 8px 0;
+    line-height: 1.5;
+    color: #e8dcc4;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #c9b896;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .ancient-container,
+    .modern-tech-container,
+    .play-container,
+    .challenge-container {
+        flex-direction: column;
+    }
+    
+    .ancient-box, .ancient-image,
+    .modern-box, .modern-image,
+    .play-box, .play-image,
+    .challenge-image, .challenge-content {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .ancient-box, .modern-box, .play-box,
+    .challenge-content {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .ancient-image, .modern-image, .play-image,
+    .challenge-image {
+        height: 350px;
+    }
+    
+    .ancient-box, .ancient-image {
+        order: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .simple-solution-box {
+        padding: 30px 15px;
+    }
+    
+    .simple-solution-box h2 {
+        font-size: 1.8em;
+    }
+    
+    .single-feature-showcase {
+        padding: 40px 15px;
+    }
+    
+    .feature-image-container {
+        padding: 15px;
+    }
+    
+    .centered-feature-image {
+        width: 95%;
+        max-width: 100%;
+    }
+    
+    .ancient-box h2,
+    .modern-box h2,
+    .play-box h2 {
+        font-size: 2em;
+    }
+    
+    .challenge-content h2 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .challenge-content h3 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .challenge-content li {
+        font-size: 1em;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-logo,
+    .footer-contact,
+    .footer-credit {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-tagline {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 400px;
+        padding: 0 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .paper-card {
+        padding: 30px 20px;
+    }
+    
+    .paper-card h2 {
+        font-size: 1.8em;
+    }
+    
+    .simple-solution-box h2 {
+        font-size: 1.5em;
+    }
+    
+    .ancient-box,
+    .modern-box,
+    .play-box {
+        padding: 30px 20px;
+    }
+    
+    .ancient-box h2,
+    .modern-box h2,
+    .play-box h2 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    
+    .ancient-image,
+    .modern-image,
+    .play-image,
+    .challenge-image {
+        height: 300px;
+    }
+    
+    .benefits-title {
+        font-size: 1.5em;
+        padding: 15px 25px;
+    }
+    
+    .challenge-content h2 {
+        font-size: 1.5em;
+    }
+    
+    .challenge-content h3 {
+        font-size: 1.2em;
+    }
+}
